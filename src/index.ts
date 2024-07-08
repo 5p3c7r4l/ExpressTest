@@ -12,11 +12,11 @@ app.get('/search/:querry',(req:any,res:any) => {
     res.send(`that ${req.params.querry}`)
 })
 
-app.get('/api/programs',(req:any,res:any) => {
+app.get('/api/categories',(req:any,res:any) => {
     res.status(200).send(data)
 })
 
-app.get('/api/programs/:id',(req:any,res:any) => {
+app.get('/api/categories/:id',(req:any,res:any) => {
     if (data.find((e:any) => e.id == req.params.id)){
     res
     .status(200)

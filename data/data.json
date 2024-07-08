@@ -1,18 +1,8 @@
-[
-
-  {
+[{
 
     "id": 1,
 
-    "title": "Citizen Kane",
-
-    "director": "Orson Wells",
-
-    "year": "1941",
-
-    "color": false,
-
-    "duration": 120
+    "name": "Science-Fiction"
 
   },
 
@@ -20,32 +10,6 @@
 
     "id": 2,
 
-    "title": "The Godfather",
+    "name": "Comédie"
 
-    "director": "Francis Ford Coppola",
-
-    "year": "1972",
-
-    "color": true,
-
-    "duration": 180
-
-  },
-
-  {
-
-    "id": 3,
-
-    "title": "Pulp Fiction",
-
-    "director": "Quentin Tarantino",
-
-    "year": "1994",
-
-    "color": true,
-
-    "duration": 180
-
-  }
-
-]
+  }]

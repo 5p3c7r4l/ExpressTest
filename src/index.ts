@@ -1,19 +1,22 @@
+require('dotenv').config()
+
 const express = require('express');
 const data = require('../data/data.json')
+const {SERVICE_PORT} = process.env
 
 const app = express();
 
-const port = 5000;
+const port = SERVICE_PORT;
 
 app.get('/search/:querry',(req:any,res:any) => {
     res.send(`that ${req.params.querry}`)
 })
 
-app.get('/api/movies',(req:any,res:any) => {
+app.get('/api/programs',(req:any,res:any) => {
     res.status(200).send(data)
 })
 
-app.get('/api/movies/:id',(req:any,res:any) => {
+app.get('/api/programs/:id',(req:any,res:any) => {
     if (data.find((e:any) => e.id == req.params.id)){
     res
     .status(200)
